@@ -8,5 +8,6 @@ First, copy paste following lines to your terminal shell, depending on you opera
 
 ### MacOS
 ```
-python -m pip install requests
+python -m pip3 install requests
+python -m pip3 install fastparquet
 ```
