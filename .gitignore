@@ -1,3 +1,5 @@
-spark-3.0.0-bin-hadoop3.2.tgz
+*.tgz
 spark-3.0.0-bin-hadoop3.2/*
-
+spark-3.2.1-bin-hadoop3.2/*
+.vscode/
+jars
