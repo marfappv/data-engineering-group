@@ -20,6 +20,7 @@ python -m pip3 install fastparquet
 python -m pip3 install -q findspark
 python -m pip3 install pyspark
 pyspark --num-executors 2
+python -m pip3 install pyarrow
 
 brew install --cask homebrew/cask-versions/temurin8
 brew install --cask android-sdk
