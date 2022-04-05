@@ -1,4 +1,5 @@
 import requests
+import time
 import pandas as pd
 
 def fetch_assets(page, limit, assets):
@@ -28,13 +29,14 @@ def main():
     nfts = []
     for page in range(0,20):
         fetch_assets(page, 200, nfts)
+        time.sleep(1)
 
     # Create a pandas dataframe out of the list.
-    opensea_df = pd.DataFrame(nfts)
-    print(opensea_df)
+    opensea_API_df = pd.DataFrame(nfts)
+    print(opensea_API_df)
 
     # Save the dataframe in Parquet format.
-    opensea_df.to_parquet('opensea.parquet', engine='fastparquet')
+    opensea_API_df.to_parquet('opensea_API.parquet', engine='fastparquet')
 
 if __name__ == "__main__":
     main()

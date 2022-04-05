@@ -1,6 +1,7 @@
 from helium import *
-
 from selenium import webdriver
+import pandas as pd
+
 #chrome_options = webdriver.ChromeOptions()
 #chrome_options.add_argument('--headless')
 #chrome_options.add_argument('--no-sandbox')
@@ -62,6 +63,8 @@ for _ in range(5):
 
 data = list(map(get_details,final_links))
 
-import pandas as pd
+ # Create a pandas dataframe out of the list.
+opensea_ws_df = pd.DataFrame(data)
 
-print(pd.DataFrame(data))
+# Save the dataframe in Parquet format.
+opensea_ws_df.to_parquet('opensea_ws.parquet', engine='fastparquet')
