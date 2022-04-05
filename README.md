@@ -6,9 +6,14 @@ This project merges two sources about NFTs: [Open Sea](https://opensea.io), anot
 Source of a ready CSV file from NFT Showroom can be found [here](https://www.kaggle.com/datasets/vepnar/nft-art-dataset).
 
 ## Instruction
-First, copy paste following lines to your terminal shell, depending on you operating system.
+This is a guide on how to run the project using local server. Copy paste following lines to your terminal shell, depending on you operating system.
 
-### MacOS
+1. git clone https://github.com/marfappv/data_eng_group
+2. Go to your local directory
+3. python -m http.server 8000
+4. Open your browser at http://localhost:8000
+
+#### MacOS
 ```
 python -m pip3 install requests
 python -m pip3 install fastparquet
