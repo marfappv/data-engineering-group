@@ -23,4 +23,9 @@ pyspark --num-executors 2
 
 brew install --cask homebrew/cask-versions/temurin8
 brew install --cask android-sdk
+
+curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
+sudo installer -pkg AWSCLIV2.pkg -target /
+curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
+sudo installer -pkg ./AWSCLIV2.pkg -target /
 ```
