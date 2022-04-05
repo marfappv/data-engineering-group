@@ -24,9 +24,11 @@ python -m pip3 install pyarrow
 
 brew install --cask homebrew/cask-versions/temurin8
 brew install --cask android-sdk
+brew install mongosh
 
 curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
 sudo installer -pkg AWSCLIV2.pkg -target /
 curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
 sudo installer -pkg ./AWSCLIV2.pkg -target /
+pip3 install datatable
 ```
