@@ -37,7 +37,7 @@ def main():
     print(opensea_API_df)
 
     # Save the dataframe in Parquet format.
-    opensea_API_df.to_parquet('opensea_API.parquet', engine='fastparquet')
+    opensea_API_df.to_parquet('parquet-data/opensea_API.parquet', engine='fastparquet')
 
 if __name__ == "__main__":
     main()

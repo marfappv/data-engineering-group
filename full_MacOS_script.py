@@ -98,7 +98,7 @@ def main():
         time.sleep(1)
 
     opensea_API_df = pd.DataFrame(nfts)
-    opensea_API_df.to_parquet('opensea_API.parquet', engine='fastparquet')
+    opensea_API_df.to_parquet('parquet-data/opensea_API.parquet', engine='fastparquet')
 
 if __name__ == "__main__":
     main()
