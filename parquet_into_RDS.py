@@ -29,7 +29,7 @@ password = "qwerty123"
 
 df.write \
     .format("jdbc") \
-    .mode("append") \
+    .mode("overwrite") \
     .option("url", postgres_uri) \
     .option("dbtable", dbtable) \
     .option("user", user) \
