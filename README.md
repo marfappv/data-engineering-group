@@ -25,3 +25,17 @@ bash Linux_env.sh
 cd ..
 python3 full_MacOS_script.py
 ```
+
+#### Check the imputed RDS
+
+1. Type the following line to your teminal:
+```
+psql --host=nfts.cuweglfckgza.eu-west-2.rds.amazonaws.com --port=5432 --username=marfapopova21 --password --dbname=nfts
+```
+2. Insert password: qwerty123. Hit enter.
+3. Type the following 3 lines in terminal:
+```
+\dn
+\dt nfts.*
+select * from nfts.assets;
+```
