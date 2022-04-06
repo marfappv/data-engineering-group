@@ -1,34 +1,27 @@
 # Project description and instruction for launching
 
 ## Description
-This project merges two sources about NFTs: [Open Sea](https://opensea.io), another from [NFT Showroom](https://nftshowroom.com). It brings more labels regarding NFTs and broader variency of e-currencies, which may be used by data science teams, for example, to analyse determinant factors of price.
+This project merges two sources about NFTs: [Open Sea](https://opensea.io), another from [NFT Showroom](https://nftshowroom.com). It brings more labels regarding NFTs and broader variency of e-currencies, which may be used by data science teams, for example, to analyse determinant factors of NFT price.
 
 Source of a ready CSV file from NFT Showroom can be found [here](https://www.kaggle.com/datasets/vepnar/nft-art-dataset).
 
 ## Instruction
-This is a guide on how to run the project using local server. Copy paste following lines to your terminal shell, depending on you operating system.
-
-1. git clone https://github.com/marfappv/data_eng_group
-2. Go to your local directory
-3. python -m http.server 8000
-4. Open your browser at http://localhost:8000
+This is a guide on how to run the project using local server. Copy-paste following lines **line by line** to your terminal, depending on your operating system. If the third step runs with an error, try moving on with the rest of commands, as you might have all the needed packages installed.
 
 #### MacOS
 ```
-python -m pip3 install requests
-python -m pip3 install fastparquet
-python -m pip3 install -q findspark
-python -m pip3 install pyspark
-pyspark --num-executors 2
-python -m pip3 install pyarrow
+git clone https://github.com/marfappv/data_eng_group
+cd data_eng_group/environments
+bash MacOs_env.sh
+cd ..
+python3 full_MacOS_script.py
+```
 
-brew install --cask homebrew/cask-versions/temurin8
-brew install --cask android-sdk
-brew install mongosh
-
-curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
-sudo installer -pkg AWSCLIV2.pkg -target /
-curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
-sudo installer -pkg ./AWSCLIV2.pkg -target /
-pip3 install datatable
+#### Linux
+```
+git clone https://github.com/marfappv/data_eng_group
+cd data_eng_group/environments
+bash Linux_env.sh
+cd ..
+python3 full_MacOS_script.py
 ```
